@@ -18,7 +18,7 @@ router.get("/date", (req, res) => res.send (currentDateTime));
 //welcome route with parameter
 router.get("/welcome/:name", (req, res) => {
   const name = req.params.name;
-  res.send("<h1>Welcome, ${name}!</h1>");
+  res.send(`<h1>Welcome, ${name}!</h1>`);
 });
 
 //chain route demonstrating next()
